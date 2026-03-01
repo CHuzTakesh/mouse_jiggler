@@ -1,6 +1,7 @@
 # Mouse Jiggler with RP2040-Zero
 
 This project implements a mouse jiggler using an RP2040-Zero and CircuitPython. The device automatically moves the mouse cursor in a square pattern to keep the system active.
+UPDATE: The device RP2040-Zero is not read as FS for the host
 
 ## Hardware Requirements
 
@@ -31,13 +32,15 @@ This project implements a mouse jiggler using an RP2040-Zero and CircuitPython. 
 
 ### 3. Install the Code
 
-1. Copy a `code.py` file to the root of the RP2040-Zero.
+1. Copy the `code.py` file to the root of the RP2040-Zero.
+2. Copy the `boot.py` file to the root of the RP2040-Zero.
 
 ## File Structure
 
 ```
 CIRCUITPY (root unit)
 ├── code.py
+├── boot.py
 └── lib/
     └── adafruit_hid/
         ├── __init__.mpy
